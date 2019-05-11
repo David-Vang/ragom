@@ -1,0 +1,66 @@
+<style scoped>
+    #top-action-buttons {
+        width: 100%;
+    }
+    .menu-row { 
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .action-links a.top-action-link {
+        text-transform: uppercase;
+        font-family: 'Oswald';
+        font-weight: 700;
+        font-size: 13px;
+        color: #000000;
+        margin: 0 10px;
+    }
+    .action-buttons {
+        /* margin-right: 60px more closely matches what's shown on the desired prototype. I suggest a margin-right: 40px which lines up the right menu button with "SHOP". In my opinion, this provides a better sense of balance but completely up you. */
+        margin-right: 40px;
+    }
+    #block-block-3 form .form-text {
+        /* styles to edit in global.styles */
+        margin-left: 0;
+        width: 20px;
+    }
+    @media only screen and (max-width: 768px) {
+        .action-links {
+            display: none;
+        }
+    }
+</style>
+
+<div id="top-action-buttons">
+
+    <div class="action-links menu-row">
+        <a class="top-action-link surrender" href="/news" style="">News</a>
+        <a class="top-action-link events" href="/events" style="">Events</a>
+        <a class="top-action-link shop" href="/shop" style="">Shop</a>
+        <form action="/" method="post" id="search-block-form" accept-charset="UTF-8">
+            <div>
+                <div class="container-inline">
+                    <h2 class="element-invisible">Search form</h2>
+                    <div class="form-item form-type-textfield form-item-search-block-form">
+                        <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+                        <input title="Enter the terms you wish to search for." type="search" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" disabled="">
+                    </div>
+                    <div class="form-actions form-wrapper" id="edit-actions">
+                        <input type="submit" id="edit-submit" name="op" value="" class="form-submit">
+                    </div>
+                    <input type="hidden" name="form_build_id" value="form-pVgBm6HmFJbcyKq4dE82aKPk6dtIZnWIh6YXsKWHezo">
+                    <input type="hidden" name="form_id" value="search_block_form">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="action-buttons menu-row">
+
+        <a class="white-button top-action surrender" href="/surrender-dog" style="">Surrender a Dog</a>
+        <a class="red-button top-action donate desktop-only" href="https://ragom.z2systems.com/np/clients/ragom/donation.jsp?campaign=7657" style="" target="_blank" rel=" noopener noreferrer">Donate</a>
+
+    </div>
+
+</div>
